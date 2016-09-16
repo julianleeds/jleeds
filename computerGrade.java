@@ -15,8 +15,7 @@ public class computerGrade
      System.out.println("Entering Grade for test 3: ");
      double grade3 = input.nextDouble();
      double average = (grade1 + grade2 + grade3) / 3;
-     String finalGrade = name + "'Harambe final grade is";
-      + getLetterGrade(average);
+     String finalGrade = name + "'Harambe final grade is " + getLetterGrade(average);
         
 //         if(average >= 90){
 //           finalGrade = finalGrade + 'A';
@@ -38,7 +37,7 @@ public class computerGrade
       
     }
 
-    public static char getLetterGrade(double grade)
+    public static char getLetterGrade(double average)
     {
       if(average >= 90){
       return 'A';
